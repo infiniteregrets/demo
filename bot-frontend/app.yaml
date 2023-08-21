@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bot-frontend-deployment
+  labels:
+    app: bot-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bot-frontend
+  template:
+    metadata:
+      labels:
+        app: bot-frontend
+    spec:
+      containers:
+        - name: bot-frontend
+          image: bot-frontend:latest
+          imagePullPolicy: Never          
+          env:
+            - name: MIRRORD_FAKE_VAR_FIRST
+              value: mirrord.is.running
+            - name: MIRRORD_FAKE_VAR_SECOND
+              value: "7777"

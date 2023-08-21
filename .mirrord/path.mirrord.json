@@ -1,0 +1,18 @@
+
+{
+    "accept_invalid_certificates": false,    
+    "feature": {
+        "network": {
+            "incoming": {
+                "mode": "steal",
+                "http_filter": {
+                    "path_filter": "/api/v1"                    
+                }              
+            }
+        },
+        "fs": {
+            "mode": "read"
+        },
+        "env": true
+    }
+}

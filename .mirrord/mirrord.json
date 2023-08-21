@@ -1,0 +1,16 @@
+
+{
+    "accept_invalid_certificates": false,    
+    "feature": {
+        "network": {
+            "incoming": {
+                "mode": "mirror"                
+            }            
+        },
+        "fs": {
+            "mode": "read"
+        },
+        "env": true
+    
+    }
+}

@@ -1,0 +1,18 @@
+
+{
+    "accept_invalid_certificates": false,    
+    "feature": {
+        "network": {
+            "incoming": {
+                "mode": "steal",
+                "http_filter": {
+                    "header_filter": "service-log: true"                    
+                }              
+            }
+        },
+        "fs": {
+            "mode": "write"
+        },
+        "env": true
+    }
+}

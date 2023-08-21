@@ -1,0 +1,15 @@
+
+{
+    "accept_invalid_certificates": false,    
+    "feature": {
+        "network": {
+            "incoming": {
+                "mode": "steal"                
+            }
+        },
+        "fs": {
+            "mode": "read"
+        },
+        "env": true
+    }
+}
